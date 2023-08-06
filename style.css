@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: #ae9cff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 20px;
+  /* height: 400px; */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+}
+.searchBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.searchBox #searchBar {
+  padding: 10px;
+  margin: 0 5px;
+  /* border-radius: 10px; */
+  width: 80%;
+  flex-grow: 1;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.3s ease;
+}
+.searchBox #searchBar:focus {
+  border-bottom: 2px solid #ae9cff;
+}
+.searchBox #searchBar::placeholder {
+  color: black;
+}
+.searchBox .searchBtn {
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background-color: #ae9cff;
+  outline: none;
+  border-radius: 10px;
+  flex-grow: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+.searchBox .searchBtn:hover {
+  background-color: #695da0;
+  color: white;
+}
+
+.results {
+  padding: 20px;
+}
+
+.word {
+  margin-bottom: 10px;
+}
+.phonetic {
+  color: rgb(187, 174, 174);
+  size: 14px;
+  margin-bottom: 20px;
+}
+
+.meaning {
+  /* font-size: 20px; */
+  margin-bottom: 20px;
+}
+
+.example {
+  border-left: 5px solid #ae9cff;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.notFound {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
+}
